@@ -5,7 +5,16 @@ public class Hello {
 	public static void main(String[] args) {
 		System.out.println("Hello, world!");
 
-		int i = 0;
-		System.out.println("i++ = " + i++);
+		boolean b = "abc" == "abc";
+		System.out.println(b);
+		
+		b = "abc" == new String("abc");
+		System.out.println(b);
+		
+		b = "abc".equals(new String("abc"));
+		System.out.println(b);
+		
+		b = !"abc".equals(new String("abc"));
+		System.out.println(b);
 	}
 }
